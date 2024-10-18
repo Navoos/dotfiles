@@ -1,0 +1,6 @@
+{
+  "catppuccin": { "branch": "main", "commit": "7be452ee067978cdc8b2c5f3411f0c71ffa612b9" },
+  "lazy.nvim": { "branch": "main", "commit": "1159bdccd8910a0fd0914b24d6c3d186689023d9" },
+  "nerdtree": { "branch": "master", "commit": "9b465acb2745beb988eff3c1e4aa75f349738230" },
+  "vimtmuxnavigator": { "branch": "master", "commit": "a9b52e7d36114d40350099f254b5f299a35df978" }
+}

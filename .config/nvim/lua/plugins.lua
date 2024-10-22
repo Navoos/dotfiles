@@ -1,6 +1,8 @@
 return {
 	{ "catppuccin/nvim", name = "catppuccin", priority = 1000 },
 	{ "preservim/nerdtree", name = "nerdtree", priority = 1000 },
+	{ "junegunn/fzf", name = "fzf", priority = 1000 },
+	{'junegunn/fzf.vim', name="fzf-vim", priority = 1000},
 	{ "christoomey/vim-tmux-navigator", name="vimtmuxnavigator", priority = 1000,
 		  cmd = {
 		    "TmuxNavigateLeft",

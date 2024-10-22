@@ -39,14 +39,14 @@ vim.cmd("colorscheme catppuccin")
 -- Map <leader>n to NERDTreeFocus
 vim.keymap.set('n', '<leader>n', ':NERDTreeFocus<CR>', { silent = true })
 
--- Map <C-n> to open NERDTree
-vim.keymap.set('n', '<C-n>', ':NERDTree<CR>', { silent = true })
-
 -- Map <C-t> to toggle NERDTree
 vim.keymap.set('n', '<C-t>', ':NERDTreeToggle<CR>', { silent = true })
 
--- Map <C-f> to NERDTreeFind
-vim.keymap.set('n', '<C-f>', ':NERDTreeFind<CR>', { silent = true })
+
+-- Map <C-f> to find files
+vim.keymap.set('n', '<C-f>', ':Files<CR>', { silent = true })
+-- Map <leader>f to search in files
+vim.keymap.set('n', '<leader>f', ':Rg<CR>', { silent = true })
 
 
 -- close NERDTRee if it is the last standing page
@@ -63,6 +63,9 @@ vim.api.nvim_create_autocmd("BufEnter", {
     end
   end,
 })
+
+-- :grep will use ripgrep
+vim.opt.grepprg = "rg --vimgrep --smart-case --follow"
 
 
 -- Optimized autosave for modified buffers

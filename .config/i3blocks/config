@@ -19,3 +19,14 @@ color=#f07ff5
 command=~/.config/i3blocks/scripts/battery.sh
 interval=10
 color=#f07ff5
+
+[brightness]
+command=~/.config/i3blocks/scripts/brightness.sh
+interval=1
+color=#f07ff5
+
+[sound]
+command=~/.config/i3blocks/scripts/sound.sh
+interval=2
+color=#f07ff5
+
